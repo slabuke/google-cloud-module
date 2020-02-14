@@ -1,12 +1,12 @@
 # google-cloud-module - Siarhei Kazak
 
 ## Today I've done the following:
-### - [x] Activated 12 months free tier on my existed Google Account
-### - [x] Performed Budget configuration
-### - [x] Installed and configureed Google SDK
-### - [x] Completeed the lab “Cloud IAM”
-### - [x] Createed Service Account for Terraform
-### - [x] Configured terraform to access GCP via Service Account
+### - Activated 12 months free tier on my existed Google Account [✓]
+### - Performed Budget configuration [✓]
+### - Installed and configureed Google SDK [✓]
+### - Completeed the lab “Cloud IAM” [✓]
+### - Createed Service Account for Terraform [✓]
+### - Configured terraform to access GCP via Service Account [✓]
 
 ## Attaching a few screenshots
 
