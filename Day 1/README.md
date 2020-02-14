@@ -8,7 +8,7 @@
 
 
 
-## Here's Kirill Baravoy home task report:
+#### Here's Kirill Baravoy home task report:
 
 1) Activate 12 months free tier : <br>
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%201/img/free-account.png "Activate tier")
@@ -21,7 +21,6 @@
 
 4) Complete the lab “Cloud IAM” : <br>
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%201/img/bucket_001.png "Create a bucket")
-<br>
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%201/img/VM.png "Create VM")
 
 5) Create Service Account for Terraform: <br>
