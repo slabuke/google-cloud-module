@@ -1,0 +1,10 @@
+# OS-specific
+.DS_Store
+
+# Editor swapfiles
+.*.sw?
+*~
+*.json
+
+# Box storage for spec
+test/vagrant-spec/boxes/*.box
