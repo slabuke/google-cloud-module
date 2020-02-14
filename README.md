@@ -10,8 +10,13 @@
 
 # Attaching a few screenshots
 
+## This is my first GC Project:
 ![This is my first GC Project](Screenshots/gcp_project_info.png)
+## GC config files looks like this:
 ![GC config files looks like this](Screenshots/gcp_config.png)
+## GC Activity is presented here:
 ![GC Activity presented here](Screenshots/gcp_activity.png)
+## Terraform config looks like this:
 ![Terraform config looks like this](Screenshots/terraform_config.png)
+##Terraform successfully initiated message:
 ![Terraform successfully initiated message](Screenshots/terraform_init.png)
