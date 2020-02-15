@@ -19,7 +19,7 @@
 5. Complete the lab “Cloud IAM” [lab at codelabs][2]
 > Completed
 
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/firefox_YTP59QdkV3.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/firefox_jtN6Re4TPN.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/firefox_YTP59QdkV3.png)
 
 6. Create Service Account for Terraform( Use presentation or lab as guide.)
