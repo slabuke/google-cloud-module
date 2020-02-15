@@ -25,7 +25,6 @@
 6. Create Service Account for Terraform( Use presentation or lab as guide.)
 > Completed
 
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/firefox_jtN6Re4TPN.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/ter-adm.png)
 
 7. Configure terraform to access GCP via Service Account. ( Use presentation or lab as guide.)
