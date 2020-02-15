@@ -10,6 +10,8 @@
 
 3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values [codelabs][1] )
 
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/biilling.png)
+
 4. Install and configure Google SDK( Use presentation as guide.)
 
 5. Complete the lab “Cloud IAM” [lab at codelabs][2]
