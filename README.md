@@ -8,7 +8,7 @@
 
 > Completed
 
-3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0 )
+*3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values <https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0> )*
 
 4. Install and configure Google SDK( Use presentation as guide.)
 
