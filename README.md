@@ -1,10 +1,10 @@
 # google-cloud-module
 
-1. Register own Google account ( Use presentation as guide. or codelabs: Open Account and Manage Billing and Projects)
+*1. Register own Google account ( Use presentation as guide. or codelabs: Open Account and Manage Billing and Projects)*
 
 > Completed (Account has already been registered)
 
-2. Activate 12 months free tier ( Use presentation as guide.)
+*2. Activate 12 months free tier ( Use presentation as guide.)*
 
 > Completed
 
