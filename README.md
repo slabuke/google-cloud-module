@@ -1,14 +1,14 @@
 # google-cloud-module
 
-*1. Register own Google account ( Use presentation as guide. or codelabs: Open Account and Manage Billing and Projects)*
+1. Register own Google account ( Use presentation as guide. or codelabs: Open Account and Manage Billing and Projects)
 
 > Completed (Account has already been registered)
 
-*2. Activate 12 months free tier ( Use presentation as guide.)*
+2. Activate 12 months free tier ( Use presentation as guide.)
 
 > Completed
 
-*3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values [codelabs][1] )*
+3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values [codelabs][1] )
 
 4. Install and configure Google SDK( Use presentation as guide.)
 
@@ -19,4 +19,4 @@
 7. Configure terraform to access GCP via Service Account. ( Use presentation or lab as guide.)
 
 
-[1] https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0
+[1]: https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0
