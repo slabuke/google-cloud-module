@@ -12,7 +12,7 @@
 
 4. Install and configure Google SDK( Use presentation as guide.)
 
-5. Complete the lab “Cloud IAM” https://codelabs.developers.google.com/codelabs/gcp-infra-cloud-iam/index.html?index=..%2F..cloud#0
+5. Complete the lab “Cloud IAM” [lab at codelabs][2]
 
 6. Create Service Account for Terraform( Use presentation or lab as guide.)
 
@@ -20,3 +20,4 @@
 
 
 [1]: https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0
+[2]: https://codelabs.developers.google.com/codelabs/gcp-infra-cloud-iam/index.html?index=..%2F..cloud#0
