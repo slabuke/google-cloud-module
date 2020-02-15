@@ -30,7 +30,7 @@
 
 7. Configure terraform to access GCP via Service Account. ( Use presentation or lab as guide.)
 > Completed 
-
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/putty_kR7JZSPRba.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/img/ter-init.png)
 
 [1]: https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0
