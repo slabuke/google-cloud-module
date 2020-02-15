@@ -8,7 +8,7 @@
 
 > Completed
 
-*3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values <https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0> )*
+*3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values [codelabs][1] )*
 
 4. Install and configure Google SDK( Use presentation as guide.)
 
@@ -17,3 +17,6 @@
 6. Create Service Account for Terraform( Use presentation or lab as guide.)
 
 7. Configure terraform to access GCP via Service Account. ( Use presentation or lab as guide.)
+
+
+[1] https://codelabs.developers.google.com/codelabs/gcp-infra-billing-administration/index.html?index=..%2F..cloud#0
