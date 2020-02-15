@@ -1,5 +1,5 @@
 # google-cloud-module
-
+## By Vitali Andrushkevich
 1. Register own Google account ( Use presentation as guide. or codelabs: Open Account and Manage Billing and Projects)
 
 > Completed (Account has already been registered)
