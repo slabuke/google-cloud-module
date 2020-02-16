@@ -12,5 +12,5 @@ Pavel_Karpiyevich_Report_1
 ![Screenshot](src/6.1.png)
 ![Screenshot](src/6.2.png)
 7. Configure terraform to access GCP via Service Account
-![Screenshot](src/6.1.png)
-![Screenshot](src/6.2.png)
+![Screenshot](src/7.1.png)
+![Screenshot](src/7.2.png)
