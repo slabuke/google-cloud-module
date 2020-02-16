@@ -4,9 +4,9 @@
 3.	Perform Budget configuration 
 ![Budget](images/budget.png)
 4.	Install and configure Google SDK
-![SDK](images/install sdk.png)
+![SDK](images/install_sdk.png)
 5.	Complete the lab “Cloud IAM”  
-![IAM](images/cloud iam.png)
+![IAM](images/cloud_iam.png)
 6.	Create Service Account for Terraform 
 ![SA](images/SA.png)
 7.	Configure terraform to access GCP via Service Account
