@@ -2,8 +2,8 @@
 Pavel_Karpiyevich_Report_1
 
 1. Register own Google account 
-
 2. Activate 12 months free tier
+![Screenshot](src/2.1.png)
 
 3. Perform Budget configuration
 
