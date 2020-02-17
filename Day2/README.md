@@ -27,8 +27,10 @@ The instance should be protected for deletion.
 VM should have the up and running Nginx (automatically provisioned after VM is started via yum, default configuration)
 The instance is running in default network
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Screenshots/Screenshot%20from%202020-02-14%2016-36-47.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day2/Screnshots/1.png)
 
-![RunningVM](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Screenshots/Screenshot%20from%202020-02-14%2013-41-58.png)
+![RunningVM](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day2/Screnshots/2.png)
 	
-![TerraGCP](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Screenshots/Screenshot%20from%202020-02-14%2017-04-38.png)
+![TerraGCP](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day2/Screnshots/3.png)
+
+![TerraGCP1](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day2/Screnshots/4.png)
