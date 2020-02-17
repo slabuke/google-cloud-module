@@ -1,13 +1,18 @@
 # google-cloud-module (Maryna Yantsevich' report)
-1. Register own Google account -  **DONE** 
-2.	Activate 12 months free trial  -  **DONE** 
-3.	Perform Budget configuration 
-![Budget](images/budget.png)
-4.	Install and configure Google SDK
-![SDK](images/install_sdk.png)
-5.	Complete the lab “Cloud IAM”  
-![IAM](images/cloud_iam.png)
-6.	Create Service Account for Terraform 
-![SA](images/SA.png)
-7.	Configure terraform to access GCP via Service Account
-![Terraform](images/terraform.png)
+1. Create Virtual Machine in Google cloud by the following ways:
+## gcp-ui
+![!](Images/gcp-ui.png)
+![!](Images/gcp-ui2.png)
+![!](Images/nginx-gcp.png)
+
+## gcloud
+![!](Images/gcloud.png)
+![!](Images/gcloud_nginx.png)
+
+## terraform
+![!](Images/terraform_install.png)
+![!](Images/terraform_nginx.png)
+
+
+2. Create Persistent Disk and attach it to one of existing Virtual machine
+![!](Images/att_disk.png)
