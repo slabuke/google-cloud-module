@@ -15,3 +15,4 @@
 7. Configured terraform to access GCP via Service Account
 ![screenshot of sample](scr/3.png)
 ![screenshot of sample](scr/4.png)
+`---`
