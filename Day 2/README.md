@@ -19,9 +19,9 @@
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%202/img/gcloud-nginx.png "Hello, gcloud Nginx!")
 
 3) Create VM by Terraform : <br>
-[Terraform output url](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%202/img/output-url.png "URL Output")
-[Terraform main file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%202/main.tf "Main.tf")
-[Terraform output file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%202/url.tf "url.tf")
+[Terraform output url](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%202/img/output-url.png "URL Output") <br>
+[Terraform main file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%202/main.tf "Main.tf") <br>
+[Terraform output file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%202/url.tf "url.tf") <br>
 
 
 ##### Task 2
