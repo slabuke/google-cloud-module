@@ -6,13 +6,14 @@ terraform (all settings should be provided via variables (tfvars), add URL)
 
 ![](https://github.com/MNT-Lab/google-cloud-module/blob/abrytsikava/day2/Git_img/1.png)
 
-1.)
+1.)gcp-ui
 ![](https://github.com/MNT-Lab/google-cloud-module/blob/abrytsikava/day2/Git_img/2.png)
 
-2.)
+2.)gcloud
 ![](https://github.com/MNT-Lab/google-cloud-module/blob/abrytsikava/day2/Git_img/3.png)
 
-3.) Terraform files is attached 
+3.) terraform (all settings should be provided via variables (tfvars), add URL (“http://IP. Address/” to output )
+Terraform files is attached 
 
 <b>TASK 2 :</b>
 
