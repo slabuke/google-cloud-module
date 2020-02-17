@@ -1,7 +1,7 @@
 # Google-cloud-module
 ## Task02 by Vitali Andrushkevich
 
-I created three different instance using different opportunities. firstly, google cloud gui, gcloud console (used api) and terraform
+I created three different instance using different ways: google cloud gui, gcloud console (used api) and terraform.
 
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day2/img/common%20list.png)
 
