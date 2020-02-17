@@ -1,4 +1,3 @@
 # google-cloud-module (Maryna Yantsevich' report)
-
-## Day1 - Day1/README.md
-## Day2 - Day2/README.md
+## [Day1: Report](Day1/README.md)
+## [Day2: Report](Day2/README.md)
