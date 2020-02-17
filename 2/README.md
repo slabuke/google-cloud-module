@@ -1,6 +1,6 @@
 # google-cloud-module
 
-** Task 1
+**Task 1
 1. Create Virtual Machine in Google cloud by the following ways:
 * gcp-ui (complete Lab: google codelabs: VM creation)
 ![screenshot of sample](pic/1.png)
@@ -26,7 +26,7 @@ Virtual Machine Properties:
     VM should have the up and running Nginx (automatically provisioned after VM is started via yum, default configuration)
     The instance is running in default netw
 
-** Task 2
+**Task 2
 Create Persistent Disk and attach it to one of existing Virtual machine (nginx-gcp-ui).
 1. Complete Lab goolge codelabs: persistent disk with using your VM name
 
