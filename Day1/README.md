@@ -11,7 +11,7 @@
 3. Perform Budget configuration (Use presentation as guide or Pass this lab with own values [codelabs][1] )
 > Completed
 
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day1/img/biilling.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day1/img/biilling.png)
 
 4. Install and configure Google SDK( Use presentation as guide.)
 > Completed
@@ -19,13 +19,13 @@
 5. Complete the lab “Cloud IAM” [lab at codelabs][2]
 > Completed
 
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day1/img/firefox_jtN6Re4TPN.png)
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day1/img/firefox_YTP59QdkV3.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day1/img/firefox_jtN6Re4TPN.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day1/img/firefox_YTP59QdkV3.png)
 
 6. Create Service Account for Terraform( Use presentation or lab as guide.)
 > Completed
 
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day1/img/ter-adm.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day1/img/ter-adm.png)
 
 7. Configure terraform to access GCP via Service Account. ( Use presentation or lab as guide.)
 > Completed 
