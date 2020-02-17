@@ -12,21 +12,21 @@
 ## Attaching a few screenshots
 
 ### VMs created with 3 different ways:
-![VMs created with 3 different ways](../Screenshots/nginx-gcp-ui)
+![VMs created with 3 different ways](../Screenshots/nginx-gcp-ui.png)
 
-![VMs created with 3 different ways](../Screenshots/nginx-gcloud)
+![VMs created with 3 different ways](../Screenshots/nginx-gcloud.png)
 
-![VMs created with 3 different ways](../Screenshots/nginx-tf)
+![VMs created with 3 different ways](../Screenshots/nginx-tf.png)
 
 ### VMs provisioned with nginx:
-![VMs provisioned with nginx](Screenshots/nginx-gcp-ui-browser.png)
+![VMs provisioned with nginx](../Screenshots/nginx-gcp-ui-browser.png)
 
-![VMs provisioned with nginx](Screenshots/nginx-gcloud-browser.png)
+![VMs provisioned with nginx](../Screenshots/nginx-gcloud-browser.png)
 
-![VMs provisioned with nginx](Screenshots/nginx-tf-browser.png)
+![VMs provisioned with nginx](../Screenshots/nginx-tf-browser.png)
 
 ### List of running instances:
-![List of running instances](Screenshots/instances_list.png)
+![List of running instances](../Screenshots/instances_list.png)
 
 ### Additional drive for nginx-tf instance:
-![Additional drive for nginx-tf instance](Screenshots/additional_disk.png)
+![Additional drive for nginx-tf instance](../Screenshots/additional_disk.png)
