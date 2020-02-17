@@ -90,3 +90,12 @@ resource "google_compute_attached_disk" "default" {
   instance = "${google_compute_instance.nginx-gcp-terraform.self_link}"
 }
 ```
+
+Also you can watch screenshots [here][1]
+
+And watch scripsts [gcloud_create.sh][2] [instance.tf][3] [variables.tf][4]
+
+[1]: https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day2/img
+[2]: https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day2/gcloud_create.sh
+[3]: https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day2/instance.tf
+[4]: https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day2/variables.tf
