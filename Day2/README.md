@@ -37,8 +37,9 @@ gcloud compute instances attach-disk nginx-gcloud \
   
   >Terraform create (with attached disk using terraform)
 
-//instance.tf
+
 ```tf
+//instance.tf
 provider "google" {
   credentials = "${file("~/gcp/.terraform-admin.json")}"
   project     = "${var.project}"
