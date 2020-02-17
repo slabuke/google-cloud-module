@@ -16,5 +16,6 @@ Create Persistent Disk and attach it to one of existing Virtual machine (nginx-g
 2. Create terraform configuration to do the same via terraform (use VM: nginx-gcp-terraform).
 ![Screenshot](src2/img/2.2.png)
 
+[Terraform files folder](https://github.com/MNT-Lab/google-cloud-module/tree/pkarpiyevich/day2/src2)
 
 
