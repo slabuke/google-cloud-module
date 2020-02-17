@@ -11,7 +11,7 @@
 ![screenshot of sample](img/1.png)<br>
 ![screenshot of sample](img/2.png)
 
-2) Create Persistent Disk and attach it to one of existing Virtual machine <br>
+2) Create Persistent Disk and attach it to one of existing Virtual machine : <br>
 ![screenshot of sample](img/3.png)<br>
 ![screenshot of sample](img/4.png)<br>
 ![screenshot of sample](img/5.png)
