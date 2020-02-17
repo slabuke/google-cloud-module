@@ -25,7 +25,7 @@
 
 ### terraform
 <p align="center">
-  <img src="Images/terraform_install" width="700px" />
+  <img src="Images/terraform_install.png" width="700px" />
 </p>
 <p align="center">
   <img src="Images/terraform_nginx.png" width="700px" />
@@ -34,5 +34,5 @@
 
 ## 2. Create Persistent Disk and attach it to one of existing Virtual machine
 <p align="center">
-  <img src="att_disk.png" width="700px" />
+  <img src="Images/att_disk.png" width="700px" />
 </p>
