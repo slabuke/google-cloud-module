@@ -20,7 +20,7 @@
 ![lab1_trouble2](../Screenshots/lab1_trouble2.png)
 
 ### Anyway got it done by choosing another region for LB
-![lab1_trouble_done](../Screenshots/lab1_trouble_done.png)
+![lab1_trouble_done](../Screenshots/lab1_done.png)
 
 ## Task2:
 ### Siege attack on LB:
