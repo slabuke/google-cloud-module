@@ -107,6 +107,9 @@ For base i have used a script that i use in previos task (debian base)
 
 You can watch thet here: [main.tf][1] [variables.tf][2]
 
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/firefox_Hyim4yMWAJ.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/firefox_pe1lqrJJXw.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/firefox_m9GLEN8JN2.png)
 
 [1]: https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/main.tf
 [2]: https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/variables.tf
