@@ -1,0 +1,24 @@
+gcloud compute ssh nat-gw-us --ssh-flag="-A" --zone us-central1-f
+ssh nat-node-us
+
+
+sudo apt-get update
+sudo apt-get install apache2 -y
+echo `hostname` | sudo tee /var/www/html/index.html
+
+
+
+gcloud compute ssh nat-gw-eu --ssh-flag="-A" --zone europe-west1-c
+ssh nat-node-eu
+ssh nat-node-w-eu
+
+sudo yum install httpd -y
+echo `hostname` | sudo tee /var/www/html/index.html
+sudo service httpd start
+
+
+
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+

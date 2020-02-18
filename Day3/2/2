@@ -1,0 +1,12 @@
+sudo ping -i0.05 w2-vm.us-west1-b.c.artsemiyoursh-day1proj.internal -c 100 -s 1400
+
+
+siege -c 250 http://http://130.211.42.156/
+
+iperf -c eu1-vm.europe-west1-d.c.artsemiyoursh-day1proj.internal
+
+
+iperf -c eu1-vm.europe-west1-d.c.artsemiyoursh-day1proj.internal -u -b 2G
+
+
+iperf -c eu1-vm.europe-west1-d.c.artsemiyoursh-day1proj.internal -P 20
