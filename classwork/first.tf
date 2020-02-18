@@ -6,7 +6,7 @@ provider "google" {
 
 resource "google_compute_instance" "nginx-classwork-terraform" {
   count               = "${var.instance_count}"
-  name                = "${var.name}-${count.index}"
+  name                = "${var.name}-${count.index + 1}"
   machine_type        = "${var.Instance_type}"
   zone                = "${var.Zone}"
   tags                = ["http-server", "https-server"]
