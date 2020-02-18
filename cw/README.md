@@ -16,3 +16,5 @@
 It's my - [Terraform main file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/main.tf "main.tf") <br>
 
 It's my - [varaible.tf](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/main.tf "var.tf") <br>
+
+It's my - [URL Output.tf](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/url.tf "var.tf") <br>
