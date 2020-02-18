@@ -1,13 +1,14 @@
 # google-cloud-module - Siarhei Kazak
-# Day-2
+# Day-3
 
 ## Today I've done the following:
 
-## (Task1) Created and pre-configured Virtual Machine in Google cloud by the following ways:
-### - gcp-ui
-### - gcloud
-### - terraform (all settings are provided via variables (tfvars), and URL (“http://IP. Address/” is printed to output )
-## (Task2) Updated terraform configuration to add a drive to nginx-tf instance via terraform
+## Created and pre-configured VM with a network solution:
+
+### Network name:  skazak-vpc
+### Firewall rules for external (allow 80,22) and internal (allow 0-65535) access 
+### Subnets with ranges: 10.8.1.0/24 10.8.2.0/24
+### nginx with default page “Hello from Siarhei Kazak”
 
 ## Attaching a few screenshots
 
