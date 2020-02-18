@@ -8,7 +8,6 @@ provider "google" {
 resource "google_compute_instance" "nginx-classwork-terraform" {
   count                   = "${var.ins_count}"
   name                    = "${var.Name}-${count.index}"
-  name                    = "${var.Name}"
   zone                    = "${var.Zone}"
   machine_type            = "${var.MT}"
   tags                    = ["http-server", "https-server"]
@@ -34,8 +33,8 @@ resource "google_compute_instance" "nginx-classwork-terraform" {
     osfamily          = "debian"
     wayofinstallation = "terraform"
   }
-}
 
-timeouts {
-  delete = "40m"
+  timeouts {
+    delete = "40m"
+  }
 }

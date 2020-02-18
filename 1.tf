@@ -2,15 +2,17 @@ provider "google" {
   credentials = "${file(".instant-river-268209-57e284821158.json")}"
   project     = "instant-river-268209"
   region      = "us-central1"
-  zone        = "us-central1-c"
+  zone        = "us-central1-a"
 }
 
-resource "google_compute_instance" "nginx-terraform" {
+resource "google_compute_instance" "nginx-classwork-terraform" {
+  count                   = "${var.ins_count}"
+  name                    = "${var.Name}-${count.index}"
   name                    = "${var.Name}"
   zone                    = "${var.Zone}"
   machine_type            = "${var.MT}"
   tags                    = ["http-server", "https-server"]
-  metadata_startup_script = "sudo yum update -y \n sudo yum install nginx -y \n sudo systemctl restart nginx \n sudo systemctl enable nginx"
+  metadata_startup_script = "sudo apt-get update -y \n sudo apt-get install nginx -y \n sudo systemctl restart nginx \n sudo systemctl enable nginx"
   deletion_protection     = "true"
 
   boot_disk {
@@ -29,20 +31,11 @@ resource "google_compute_instance" "nginx-terraform" {
 
   labels {
     servertype        = "nginxserver"
-    osfamily          = "redhat"
+    osfamily          = "debian"
     wayofinstallation = "terraform"
   }
 }
 
-resource "google_compute_disk" "nginx-gcp-tf" {
-  name                      = "nginx-gcp-tf"
-  zone                      = "${var.Zone}"
-  size                      = "10"
-  labels                    = {}
-  physical_block_size_bytes = 4096
-}
-
-resource "google_compute_attached_disk" "default" {
-  disk     = "${google_compute_disk.nginx-gcp-tf.self_link}"
-  instance = "${google_compute_instance.nginx-terraform.self_link}"
+timeouts {
+  delete = "40m"
 }

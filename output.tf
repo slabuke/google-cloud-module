@@ -1,21 +1,26 @@
 output "http" {
-  value = "http://${google_compute_instance.nginx-terraform.network_interface.0.access_config.0.nat_ip}"
+  value = "http://${google_compute_instance.nginx-classwork-terraform.network_interface.0.access_config.0.nat_ip}"
 }
 
 variable "Name" {
-  default = "nginx-terraform"
+  default     = "nginx-classwork-terraform"
+  description = "Ubuntu nginxserver"
+}
+
+variable "ins_count" {
+  default = "2"
 }
 
 variable "ssd_size" {
-  default = "25"
+  default = "30"
 }
 
 variable "MT" {
-  default = "custom-1-4608"
+  default = "g1-small"
 }
 
 variable "IM" {
-  default = "centos-7"
+  default = "ubuntu-1604-xenial-v20200129"
 }
 
 variable "DiskType" {
@@ -23,8 +28,5 @@ variable "DiskType" {
 }
 
 variable "Zone" {
-  default = "us-central1-c"
+  default = "us-central1-a"
 }
-
-//gcloud compute instances attach-disk nginx-terraform --disk mydisk --zone us-central1-c
-
