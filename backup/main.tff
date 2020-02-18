@@ -1,0 +1,95 @@
+provider "google" {
+  credentials = "${file(".luckylocky-8042bd02aa86.json")}"
+  project     = "luckylocky"
+  region      = "us-central1"
+}
+
+resource "google_compute_instance" "nginx-terraform" {
+  name         = "${var.name}"
+  machine_type = "${var.InstanceT}"
+  zone         = "${var.Zone}"
+  tags         = ["http-server", "https-server"]
+
+  metadata_startup_script = <<EOF
+  sudo -i
+  apt-get update -y
+  apt-get install nginx -y
+  systemctl start nginx
+  systemctl enable nginx
+  echo 'Hello from Dmitriy Shishkovets!' > /var/www/html/index.html
+EOF
+
+  boot_disk {
+    initialize_params {
+      type  = "pd-ssd"
+      size  = "${var.SSDs}"
+      image = "${var.Image_src}"
+    }
+  }
+
+  network_interface {
+    network       = "${var.network_name}"
+    subnetwork    = "${var.Subnet-1-name}"
+    access_config = {}
+  }
+
+  labels = {
+    servertype        = "nginxserver"
+    osfamily          = "debian"
+    wayofinstallation = "terraform"
+  }
+}
+
+resource "google_compute_network" "dmitriy-vpc" {
+  name                    = "${var.network_name}"
+  description             = "Main VPC net"
+  auto_create_subnetworks = false
+}
+
+resource "google_compute_subnetwork" "Subnet-1" {
+  name          = "${var.Subnet-1-name}"
+  region        = "${var.networkReg}"
+  network       = "${google_compute_network.dmitriy-vpc.self_link}"
+  description   = "Public"
+  ip_cidr_range = "${var.Subnet-1-ip_cidr_range}"
+}
+
+resource "google_compute_subnetwork" "Subnet-2" {
+  name          = "${var.Subnet-2-name}"
+  region        = "${var.networkReg}"
+  network       = "${google_compute_network.dmitriy-vpc.self_link}"
+  description   = "Private"
+  ip_cidr_range = "${var.Subnet-2-ip_cidr_range}"
+}
+
+resource "google_compute_firewall" "firewall-private" {
+  name        = "${var.Subnet-2-name}"
+  network     = "${var.network_name}"
+  description = "Private firewall"
+
+  allow {
+    protocol = "icmp"
+  }
+
+  allow {
+    protocol = "tcp"
+    ports    = ["0-65535"]
+  }
+
+  source_ranges = ["${var.Subnet-2-ip_cidr_range}"]
+}
+
+resource "google_compute_firewall" "firewall-public" {
+  name        = "${var.Subnet-1-name}"
+  network     = "${var.network_name}"
+  description = "Public firewall"
+
+  allow {
+    protocol = "icmp"
+  }
+
+  allow {
+    protocol = "tcp"
+    ports    = ["22", "80"]
+  }
+}
