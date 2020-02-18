@@ -10,9 +10,8 @@
 
 1) Setup Network and HTTP Load Balancers : <br>
 ![screenshot of sample](pic/1.png)<br>
-
-2) Networking 101 codelab :  <br>
 ![screenshot of sample](pic/2.png)  <br>
+2) Networking 101 codelab :  <br>
 ![screenshot of sample](pic/3.png)  <br>
 ![screenshot of sample](pic/4.png)  <br>
 3) Networking 102 codelab : <br>
