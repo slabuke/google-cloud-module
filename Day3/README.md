@@ -1,5 +1,5 @@
-#gcp-cloud-module
-##task 3 by Vitali Andrushkevich
+# gcp-cloud-module
+## task 3 by Vitali Andrushkevich
 
 I have recently completed all labs from google:
 
@@ -7,14 +7,15 @@ I have recently completed all labs from google:
 
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/Load-balancer-task1.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/cluster-gcp-node1.png)
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/lb-details.png)
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/lb-monitor.png)
-![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/task1-complete.png)
 
-2. Networking 101.
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/task1-complete.png)
 
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/verify-web-functionality1.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/verify-functionality-2.png)
+2. Networking 101.
+
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/lb-details.png)
+![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/lb-monitor.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/img/done-02.png)
 
 
@@ -102,9 +103,8 @@ resource "google_compute_subnetwork" "subnetpub" {
 
 4) google_compute_instance https://www.terraform.io/docs/providers/google/r/compute_instance.html
 For base i have used a script that i use in previos task (debian base)
-[main.tf][1]
 
-[variables.tf][2]
+You can watch thet here: [main.tf][1] [variables.tf][2]
 
 
 [1]: https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day3/main.tf
