@@ -24,10 +24,6 @@ Task 4: <br>
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t4-ping.png "Successful ping")
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t4-ssh.png "Successful SSH")
 
-Task 4: <br>
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t4-ping.png "Successful ping")
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t4-ssh.png "Successful SSH")
-
 Task 5: <br>
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t5-fw.png "FW rules")
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t5-vpc.png "VPC")
