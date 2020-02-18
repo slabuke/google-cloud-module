@@ -13,4 +13,6 @@
 1) Create  2 VM by Terraform : <br>
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/img/classwork-all-vm.png "2 VM")
 
-[Terraform main file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/main.tf "main.tf") <br>
+It's my - [Terraform main file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/main.tf "main.tf") <br>
+
+It's my - [varaible.tf](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/main.tf "var.tf") <br>
