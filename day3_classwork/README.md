@@ -1,7 +1,7 @@
 # google-cloud-module - Siarhei Kazak
 # Day-3 ClassWork
 
-## Created and pre-configured two Virtual Machines in Google Cloud by terraform:
+## Created and pre-configured two Virtual Machines in Google Cloud by terraform.
 ## Virtual Machine Properties:
 
 ### - InstanceName : nginx-classwork-terraform
