@@ -11,6 +11,7 @@ resource "google_compute_instance" "nginx-classwork-terraform" {
   zone                = "${var.zone}"
   machine_type        = "${var.type}"
   deletion_protection = "${var.deletion}"
+  tags                = "${var.tags}"
 
   boot_disk {
     initialize_params {
@@ -32,6 +33,6 @@ labels {
   wayofinstallation = "terraform"
 }
 
-metadata_startup_script = "sudo apt-get -y update; sudo apt-get install nginx; sudo systemctl start nginx; sudo systemctl enable nginx"
+metadata_startup_script = "sudo apt-get -y update; sudo apt-get -y install nginx; sudo systemctl start nginx; sudo systemctl enable nginx"
 
 }
