@@ -8,7 +8,7 @@
 
 
 
-#### Here's Kirill Baravoy home task report:
+#### Here's Kirill Baravoy control task report:
 ##### Task 1
 1) Create  2 VM by Terraform : <br>
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/cw/img/classwork-all-vm.png "2 VM")
