@@ -59,7 +59,7 @@ variable "nginx_setup"{
   default = <<EOF
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo echo "<h1>Hello from vandrushkevich!</h1>" > /usr/share/nginx/html/index.html
+sudo echo "<h1>Hello from vandrushkevich!</h1>" >  /var/www/html/index.nginx-debian.html
 sudo systemctl start nginx
 sudo systemctl enable nginx
 EOF
