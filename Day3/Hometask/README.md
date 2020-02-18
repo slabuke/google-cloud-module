@@ -3,7 +3,7 @@
 # Pavel_Karunas_Report_3_Hometask
 
 
- * Task1
+# * Task1
 
  Learn about two types of load balancers in Google Cloud Platform: 
 
@@ -16,7 +16,7 @@
 
 
 
- * Task2
+# * Task2
 
  1. Set up your lab environment and learn how to work with your GCP environment.
  2. Use of common open source tools to explore your network around the world.
@@ -36,7 +36,7 @@
 
 
 
- * Task3
+# * Task3
 
  1. Setting up NAT gateways.
  2. How to restrict network traffic that certain tiers of an app cannot talk to each other.
@@ -46,7 +46,7 @@
 
 ![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task3/Screenshot%20from%202020-02-18%2018-39-18.png)
 
-* Task4
+# * Task4
 
  1. Secure app in custom network.
 
