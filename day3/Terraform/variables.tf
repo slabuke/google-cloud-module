@@ -1,7 +1,7 @@
 # Terraform global variables
 
-variable "Count" { default = 2 }
-variable "Name" { default = "nginx-classwork-terraform" }
+#variable "Count" { default = 2 }
+variable "Name" { default = "nginx-skazak" }
 
 variable "Region" { default = "us-central1" }
 variable "Zone" { default = "us-central1-a" }
@@ -11,8 +11,9 @@ variable "Type" { default = "g1-small"  }
 variable "DiskImage" { default = "ubuntu-minimal-1604-xenial-v20200129" }
 variable "DiskType" { default = "pd-ssd" }
 variable "DiskSize" { default = 30 }
-variable "Provision" { default = "sudo yum install -y nginx\nsudo systemctl restart nginx"  }
+variable "Provision" { default = "sudo apt update\n sudo apt install -y nginx --fix-missing\nsudo systemctl restart nginx\nsudo bash -c \"echo 'Hello from skazak' > /var/www/html/index.nginx-debian.html\""  }
 variable "LabelST" { default = "nginxserver" }
 variable "LabelOF" { default = "debian" }
 variable "LabelWay" { default = "terraform" }
-variable "Network" { default = "default" }
+variable "student_name" { default = "skazak" }
+variable "FirewallName" { default = "task5-firewall" }
