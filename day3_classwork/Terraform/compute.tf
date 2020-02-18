@@ -46,17 +46,3 @@ resource "google_compute_instance" "nginx-cw" {
 output "InstanceIP" {
  	value = "${google_compute_instance.nginx-cw.*.network_interface.0.access_config.0.nat_ip}"
 }
-
-
-
-#resource "google_compute_disk" "nginx-hdd" {
-#  name  = "nginx-hdd"
-#  zone  = "us-central1-c"
-#  size  = 10
-#  physical_block_size_bytes = 4096
-#}
-
-#resource "google_compute_attached_disk" "default" {
-#  disk     = "${google_compute_disk.nginx-hdd.self_link}"
-#  instance = "${google_compute_instance.nginx-tf.self_link}"
-#}
