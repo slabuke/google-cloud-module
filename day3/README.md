@@ -1,9 +1,9 @@
 # google-cloud-module - Siarhei Kazak
 # Day-3
 
-## Today I've done the following:
-
-## Created and pre-configured VM with a network solution:
+# Today I've done the following:
+## Completed lab:: https://codelabs.developers.google.com/codelabs/cloud-load-balancers/index.html?index=..%2F..index#0
+## Completed lab:: https://codelabs.developers.google.com/codelabs/cloud-networking-101/index.html?index=..%2F..index#0
 
 ### Network name:  skazak-vpc
 ### Firewall rules for external (allow 80,22) and internal (allow 0-65535) access 
@@ -12,22 +12,31 @@
 
 ## Attaching a few screenshots
 
-### VMs created with 3 different ways:
-![VMs created with 3 different ways](../Screenshots/nginx-gcp-ui.png)
+## Task1: 
+### Facing some troubles in:
+![lab1_trouble1](../Screenshots/lab1_trouble1.png)
 
-![VMs created with 3 different ways](../Screenshots/nginx-gcloud.png)
+### The output is:
+![lab1_trouble2](../Screenshots/lab1_trouble2.png)
 
-![VMs created with 3 different ways](../Screenshots/nginx-tf.png)
+### Anyway got it done by choosing another region for LB
+![lab1_trouble_done](../Screenshots/lab1_trouble_done.png)
 
-### VMs provisioned with nginx:
-![VMs provisioned with nginx](../Screenshots/nginx-gcp-ui-browser.png)
+## Task2:
+### Siege attack on LB:
+![VMs provisioned with nginx](../Screenshots/lab2_siege.png)
 
-![VMs provisioned with nginx](../Screenshots/nginx-gcloud-browser.png)
+### LB graph: actually seems to be okay with it :)
+![VMs provisioned with nginx](../Screenshots/lab2_graph.png)
 
-![VMs provisioned with nginx](../Screenshots/nginx-tf-browser.png)
+![VMs provisioned with nginx](../Screenshots/lab2_done.png)
 
-### List of running instances:
-![List of running instances](../Screenshots/instances_list.png)
+## Task5
+### Custon nginx page:
+![List of running instances](../Screenshots/task5_nginx.png)
 
-### Additional drive for nginx-tf instance:
-![Additional drive for nginx-tf instance](../Screenshots/additional_disk.png)
+### Firewall rules:
+![Additional drive for nginx-tf instance](../Screenshots/task5_firewall.png)
+
+### Subnets:
+![Additional drive for nginx-tf instance](../Screenshots/task5_subnets.png)
