@@ -24,7 +24,7 @@ variable "network" {
   default = "default"
 }
 variable "script" {
-  default = "sudo apt-get update \n sudo apt-get install nginx -Y \n sudo systemctl restart nginx "
+  default = "sudo apt-get update \n sudo apt-get install nginx -y \n sudo systemctl restart nginx "
 }
 variable "servertype" {
   default = "nginxserver"
