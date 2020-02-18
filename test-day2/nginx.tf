@@ -7,7 +7,7 @@ default  = ["us-central1-a", "us-central1-c"]
 }
 
 variable "name" {
-default = ["nginx-classwork-terraform1", "nginx-classwork-terraform1"]
+default = ["nginx-classwork-terraform1", "nginx-classwork-terraform2"]
 }
 
 variable "instance_names" {
