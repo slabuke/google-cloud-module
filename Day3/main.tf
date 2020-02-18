@@ -22,7 +22,7 @@ resource "google_compute_instance" "default" {
 
   network_interface {
     subnetwork = "${google_compute_subnetwork.subnetpub.name}"
-    access_config {}    
+    access_config {}
   }
 
 
