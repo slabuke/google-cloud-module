@@ -1,5 +1,10 @@
 variable "name" {
-  default = "nginx-classwork-terraform"
+  default     = "nginx-classwork-terraform"
+  description = "Ubuntu based nginx server"
+}
+
+variable "instance_count" {
+  default = "2"
 }
 
 variable "SSDsize" {

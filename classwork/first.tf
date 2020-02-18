@@ -4,14 +4,13 @@ provider "google" {
   region      = "us-central1"
 }
 
-resource "google_compute_instance" "nginx-terraform" {
-  name                = "${var.name}"
+resource "google_compute_instance" "nginx-classwork-terraform" {
+  count               = "${var.instance_count}"
+  name                = "${var.name}-${count.index}"
   machine_type        = "${var.Instance_type}"
   zone                = "${var.Zone}"
   tags                = ["http-server", "https-server"]
   deletion_protection = "true"
-  desciption          = "Ubuntu nginx server"
-  count               = 2
 
   metadata_startup_script = <<EOF
   sudo apt-get -y update
@@ -37,5 +36,9 @@ EOF
     servertype        = "nginxserver"
     osfamily          = "debian"
     wayofinstallation = "terraform"
+  }
+
+  timeouts {
+    delete = "40m"
   }
 }
