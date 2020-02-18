@@ -15,7 +15,10 @@
 ![screenshot of sample](img/2.png)  <br>
 ![screenshot of sample](img/3.png)  <br>
 ![screenshot of sample](img/4.png)  <br>
-
+3) Networking 102 codelab : <br>
+ Complete with some issueses. For instance 'gcloud compute addresses create web-ext-ip --region us-central1' command return
+ERROR: (gcloud.compute.addresses.create) Could not fetch resource:
+ - Quota 'STATIC_ADDRESSES' exceeded.  Limit: 1.0 in region us-central1.
 4) Secure Instances and Apps with Custom Networks :
 ![screenshot of sample](img/5.png)  <br>
 
