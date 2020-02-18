@@ -64,7 +64,7 @@ resource "google_compute_instance" "nginx-terraform" {
 
 
  timeouts {
-	delete = "20m"
+	delete = "40m"
 }
 
 
@@ -76,7 +76,7 @@ labels = {
     wayofinstallation = "${var.label3}"
   }
 
- metadata_startup_script = "sudo yum -y update; sudo yum -y install nginx; systemctl enable nginx; systemctl start nginx"
+ metadata_startup_script = "sudo apt-get update; sudo apt-get install nginx; systemctl enable nginx; systemctl start nginx"
 
  network_interface {
    network = "default"
