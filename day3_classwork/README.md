@@ -1,32 +1,21 @@
 # google-cloud-module - Siarhei Kazak
-# Day-2
+# Day-3 ClassWork
 
-## Today I've done the following:
+## Created and pre-configured two Virtual Machines in Google Cloud by terraform:
+## Virtual Machine Properties:
 
-## (Task1) Created and pre-configured Virtual Machine in Google cloud by the following ways:
-### - gcp-ui
-### - gcloud
-### - terraform (all settings are provided via variables (tfvars), and URL (“http://IP. Address/” is printed to output )
-## (Task2) Updated terraform configuration to add a drive to nginx-tf instance via terraform
-
-## Attaching a few screenshots
-
-### VMs created with 3 different ways:
-![VMs created with 3 different ways](../Screenshots/nginx-gcp-ui.png)
-
-![VMs created with 3 different ways](../Screenshots/nginx-gcloud.png)
-
-![VMs created with 3 different ways](../Screenshots/nginx-tf.png)
-
-### VMs provisioned with nginx:
-![VMs provisioned with nginx](../Screenshots/nginx-gcp-ui-browser.png)
-
-![VMs provisioned with nginx](../Screenshots/nginx-gcloud-browser.png)
-
-![VMs provisioned with nginx](../Screenshots/nginx-tf-browser.png)
-
-### List of running instances:
-![List of running instances](../Screenshots/instances_list.png)
-
-### Additional drive for nginx-tf instance:
-![Additional drive for nginx-tf instance](../Screenshots/additional_disk.png)
+### - InstanceName : nginx-classwork-terraform
+### - Region: us-central1
+### - Zone: us-central1-a
+### - Type: General Purpose, g1, 1CPU 1.7GB RAM, Disk SSD 30Gb;
+### - OS: Ubuntu 16.04 LTS
+### - Allow http,https traffic
+### - Labels:
+### - ServerType=NginxServer
+### - OSFamily=Debian
+### - WayOfInstallation=terraform
+### - The instance should be protected for deletion.
+### - The instance should contain desciption
+### - VM should have the up and running Nginx (automatically provisioned after VM is started via yum, default configuration)
+### - The instance is running in default network
+### - Timeout for deletion set to 40 mins
