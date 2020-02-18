@@ -1,4 +1,3 @@
-
 resource "google_compute_instance" "nginx-terraform" {
   name         = "${var.name}"
   project     = "${var.project_name}"
@@ -23,7 +22,14 @@ resource "google_compute_instance" "nginx-terraform" {
     }
   }
   
-  metadata_startup_script = "${file("./provision.sh")}"
+  metadata_startup_script = <<EOF
+	sudo yum install nginx -y
+	sudo systemctl start nginx
+	sudo echo -e "<h1>¯\_(ツ)_/¯</h1> \n <h1>Hello from Marina</h1>" > /home/m_yantsevich/index.html 
+	sudo cp /home/m_yantsevich/index.html  /usr/share/nginx/html/index.html
+	sudo systemctl restart nginx
+	EOF
+  
 }
 
 output "link" {
