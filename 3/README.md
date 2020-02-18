@@ -14,11 +14,11 @@
 2) Networking 101 codelab :  <br>
 ![screenshot of sample](pic/3.png)  <br>
 ![screenshot of sample](pic/4.png)  <br>
-![screenshot of sample](img/5.png)  <br>
+![screenshot of sample](pic/5.png)  <br>
 3) Networking 102 codelab : <br>
 
- ![screenshot of sample](img/10.png)  <br>
- ![screenshot of sample](img/11.png)  <br>
+ ![screenshot of sample](pic/10.png)  <br>
+ ![screenshot of sample](pic/11.png)  <br>
  
 4) Secure Instances and Apps with Custom Networks :
 
