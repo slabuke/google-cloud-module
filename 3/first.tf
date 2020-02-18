@@ -63,7 +63,7 @@ resource "google_compute_subnetwork" "Subnet-2" {
 }
 
 resource "google_compute_firewall" "firewall-private" {
-  name        = "${var.Subnet-1-name}"
+  name        = "${var.Subnet-2-name}"
   network     = "${var.network_name}"
   description = "Private Firewall rules"
 
@@ -80,7 +80,7 @@ resource "google_compute_firewall" "firewall-private" {
 }
 
 resource "google_compute_firewall" "firewall-public" {
-  name        = "${var.Subnet-2-name}"
+  name        = "${var.Subnet-1-name}"
   network     = "${var.network_name}"
   description = "Public Firewall rules"
 
