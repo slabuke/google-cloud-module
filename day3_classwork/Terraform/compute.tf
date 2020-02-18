@@ -39,13 +39,13 @@ resource "google_compute_instance" "nginx-cw" {
 	timeouts { delete = "40m" }
 	lifecycle { prevent_destroy = true }
 
-# Output instance IP
-
-#	output "InstanceIP" {
-#  	value = "http://${var.vval}"
-#	}
 }
 
+# Output instance IP
+
+output "InstanceIP" {
+ 	value = "${google_compute_instance.nginx-cw.*.network_interface.0.access_config.0.nat_ip}"
+}
 
 
 
