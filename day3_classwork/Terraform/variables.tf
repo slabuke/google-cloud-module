@@ -16,8 +16,3 @@ variable "LabelST" { default = "nginxserver" }
 variable "LabelOF" { default = "debian" }
 variable "LabelWay" { default = "terraform" }
 variable "Network" { default = "default" }
-#variable "nname" { default = "" }
-#variable "vval" { default = "" }
-
-#var.nname = "${var.Name}-${count.index + 1}"
-#var.vval = "google_compute_instance.${var.nname}.network_in    terface.0.access_config.0.nat_ip"
