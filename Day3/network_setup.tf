@@ -5,7 +5,6 @@ resource "google_compute_network" "vpc_network" {
   routing_mode            = "GLOBAL"
 }
 
-
 resource "google_compute_firewall" "external-allow" {
   name        = "vandrushkevich-external"
   description = "Allow external 80 port"
@@ -13,21 +12,9 @@ resource "google_compute_firewall" "external-allow" {
 
   allow {
     protocol = "tcp"
-    ports    = ["80"]
+    ports    = ["80", "22"]
   }
-  target_tags = ["http-server"]
-}
-
-resource "google_compute_firewall" "external-allow2" {
-  name        = "vandrushkevich-external"
-  description = "Allow external 22 port"
-  network     = "${google_compute_network.vpc_network.name}"
-
-  allow {
-    protocol = "tcp"
-    ports    = ["22"]
-  }
-  target_tags = ["ssh"]
+  target_tags = ["http-server", "ssh"]
 }
 
 resource "google_compute_firewall" "allow-internal" {
