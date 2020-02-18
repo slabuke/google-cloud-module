@@ -23,7 +23,7 @@ resource "google_compute_instance" "nginx-classwork-terraform" {
          }
 
 
-         tags = ["http-server", "https-server", "terrafrom-${count.index + 1}"]
+         tags = ["http-server", "https-server"]
          metadata_startup_script = "sudo yum -y update && sudo yum -y install nginx && sudo systemctl enable nginx && sudo systemctl start nginx"
          deletion_protection     = true
 
