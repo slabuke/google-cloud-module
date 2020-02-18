@@ -15,8 +15,6 @@
 ![screenshot of sample](img/3.png)  <br>
 ![screenshot of sample](img/4.png)  <br>
 
-3) Networking 102 codelab :
-
 
 4) Secure Instances and Apps with Custom Networks :
 ![screenshot of sample](img/5.png)  <br>
