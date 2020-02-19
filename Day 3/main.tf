@@ -10,7 +10,7 @@ resource "google_compute_instance" "nginx-terraform" {
    zone          = "${var.RegionAndZone}"
    machine_type  = "${var.Type_Machine}"
 
-   depends_on = ["google_compute_subnetwork.private-sub"]
+   depends_on = ["google_compute_subnetwork.public-sub"]
 
    tags = ["http-server", "https-server"]
 
