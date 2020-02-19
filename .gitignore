@@ -5,6 +5,6 @@
 .*.sw?
 *~
 *.json
-
+*.tff
 # Box storage for spec
 test/vagrant-spec/boxes/*.box
