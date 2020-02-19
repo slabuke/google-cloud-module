@@ -1,3 +1,5 @@
+# Revise variables.tf for vars
+
 resource "google_compute_firewall" "task5-firewall-private" {
   name    = "${var.FirewallName}-private"
   network = "${var.student_name}-vpc"
