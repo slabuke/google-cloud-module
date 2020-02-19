@@ -1,3 +1,27 @@
+resource "google_compute_instance" "network" {
+  name         = "${var.name}"
+  machine_type = "${var.machine_type}"
+  zone         = "${var.zone}"
+
+  boot_disk {
+    initialize_params {
+      image = "${var.image}"
+      size  = "${var.size}"
+      type  = "${var.type}"
+    }
+  }
+
+  network_interface {
+    network       = "${var.student_name}-vpc"
+    subnetwork    = "${var.pb_subnet}"
+    access_config = {}
+  }
+
+  metadata_startup_script = "${var.script}"
+
+  tags = "${var.tags}"
+}
+
 resource "google_compute_network" "networks" {
   name                    = "${var.student_name}-vpc"
   auto_create_subnetworks = false
@@ -49,28 +73,4 @@ resource "google_compute_subnetwork" "private_subnetwork" {
   network       = "${google_compute_network.networks.self_link}"
   ip_cidr_range = "${var.ip2}"
   description   = "private params"
-}
-
-resource "google_compute_instance" "network" {
-  name         = "${var.name}"
-  machine_type = "${var.machine_type}"
-  zone         = "${var.zone}"
-
-  boot_disk {
-    initialize_params {
-      image = "${var.image}"
-      size  = "${var.size}"
-      type  = "${var.type}"
-    }
-  }
-
-  network_interface {
-    network       = "${var.student_name}-vpc"
-    subnetwork    = "${var.pb_subnet}"
-    access_config = {}
-  }
-
-  metadata_startup_script = "${var.script}"
-
-  tags = "${var.tags}"
 }
