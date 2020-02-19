@@ -49,7 +49,3 @@ variable "OS_Family" {
 variable "WayOfInstallation" {
   default = "terraform"
 }
-
-variable "sh" {
-  default = "sudo apt update\n sudo apt install -y nginx \nsudo systemctl start nginx\nsudo bash -c \"echo 'Hello from Kirill_Baravoy!' > /var/www/html/index.html\""
-}

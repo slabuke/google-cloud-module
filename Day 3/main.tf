@@ -10,9 +10,15 @@ resource "google_compute_instance" "nginx-terraform" {
    zone          = "${var.RegionAndZone}"
    machine_type  = "${var.Type_Machine}"
 
-   timeouts {
-     delete = "40m"
-   }
+   depends_on = ["google_compute_subnetwork.private-sub"]
+
+   tags = ["http-server", "https-server"]
+
+   labels = {
+     servertype        = "${var.Server_Type}"
+     osfamily          = "${var.OS_Family}"
+     wayofinstallation = "${var.WayOfInstallation}"
+}
 
    boot_disk {
      initialize_params {
@@ -22,21 +28,22 @@ resource "google_compute_instance" "nginx-terraform" {
           }
          }
 
-
-         tags = ["http-server", "https-server"]
-         metadata_startup_script = "${var.sh}"
-         # deletion_protection     = true
-
           network_interface {
-            network = "${var.Network}"
+            network    = "${var.Student_name}-vpc"
+            subnetwork = "sub-${var.Student_name}-public"
+
               access_config {
                 // Ephemeral IP
                 }
               }
 
-            labels = {
-              servertype        = "${var.Server_Type}"
-              osfamily          = "${var.OS_Family}"
-              wayofinstallation = "${var.WayOfInstallation}"
-  }
+              metadata_startup_script = <<EOF
+              sudo -i
+              apt-get -y update
+              apt-get -y install nginx
+              systemctl start nginx
+              systemctl enable nginx
+              echo 'Hello from Kirill_Baravoy!' > /var/www/html/index.html
+EOF
+
 }
