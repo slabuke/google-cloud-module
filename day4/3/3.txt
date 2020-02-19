@@ -1,0 +1,7 @@
+proj: artsemiyoursh-day1proj
+bucket: storecore190220
+
+
+
+prject: newyoursh1d
+bucket: storecore190220-1
