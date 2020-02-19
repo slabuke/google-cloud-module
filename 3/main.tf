@@ -1,19 +1,13 @@
-provider "google" {
-  credentials = "${file(".instant-river-268209-57e284821158.json")}"
-  project     = "instant-river-268209"
-  zone        = "us-central1-a"
-}
-
 resource "google_compute_network" "networks" {
   name                    = "${var.student_name}-vpc"
   auto_create_subnetworks = false
-  description             = "${var.description}"
+  description             = "network"
 }
 
 resource "google_compute_firewall" "firewalls_private" {
   name          = "${var.firewall}-private"
   network       = "${google_compute_network.networks.name}"
-  description   = "${var.description}"
+  description   = "private firewall params"
   source_ranges = ["10.12.1.0/24"]
 
   allow {
@@ -29,7 +23,7 @@ resource "google_compute_firewall" "firewalls_private" {
 resource "google_compute_firewall" "firewalls_public" {
   name        = "${var.firewall}-public"
   network     = "${google_compute_network.networks.name}"
-  description = "${var.description}"
+  description = "public firewall params"
 
   allow {
     protocol = "icmp"
@@ -46,7 +40,7 @@ resource "google_compute_subnetwork" "public_subnetwork" {
   region        = "${var.region}"
   network       = "${google_compute_network.networks.self_link}"
   ip_cidr_range = "${var.ip1}"
-  description   = "${var.description}"
+  description   = "pugblic params"
 }
 
 resource "google_compute_subnetwork" "private_subnetwork" {
@@ -54,7 +48,7 @@ resource "google_compute_subnetwork" "private_subnetwork" {
   region        = "${var.region}"
   network       = "${google_compute_network.networks.self_link}"
   ip_cidr_range = "${var.ip2}"
-  description   = "${var.description}"
+  description   = "private params"
 }
 
 resource "google_compute_instance" "network" {
