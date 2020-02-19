@@ -1,13 +1,13 @@
 provider "google" {
   credentials = "${file("dev-001-project-a8b4975949ab.json")}"
   project     = "${var.Project_name}"
-  region      = "${var.RegionAndZone}"
+  region      = "${var.Region}"
 }
 
 resource "google_compute_instance" "nginx-terraform" {
    count         = "${var.Instance_count}"
    name          = "${var.Instance_name}"
-   zone          = "${var.RegionAndZone}"
+   zone          = "${var.Zone}"
    machine_type  = "${var.Type_Machine}"
 
    depends_on = ["google_compute_subnetwork.public-sub"]

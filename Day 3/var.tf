@@ -18,7 +18,11 @@ variable "Type_Machine" {
   default = "custom-1-4608"
 }
 
-variable "RegionAndZone" {
+variable "Region" {
+  default = "us-central1"
+}
+
+variable "Zone" {
   default = "us-central1-c"
 }
 
