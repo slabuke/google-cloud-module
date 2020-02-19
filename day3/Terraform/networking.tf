@@ -14,6 +14,7 @@ resource "google_compute_firewall" "task5-firewall-private" {
 }
 
 resource "google_compute_firewall" "task5-firewall-public" {
+  depends_on = ["google_compute_network.vpc_network"]
   name    = "${var.FirewallName}-public"
   network = "${var.student_name}-vpc"
   description = "Public Firewall rules for Task5"
@@ -26,7 +27,6 @@ resource "google_compute_firewall" "task5-firewall-public" {
     protocol = "tcp"
     ports = ["22", "80"]
   }
-
 }
 
 resource "google_compute_subnetwork" "public-sub" {
