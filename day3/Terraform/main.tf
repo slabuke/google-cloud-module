@@ -16,7 +16,7 @@ module "instances" {
 # }
 
 provider "google" {
-  credentials = "${file("./devopslab2020-gcp-module.json")}"
+  credentials = "${file("../../devopslab2020-gcp-module.json")}"
   project = "${var.Project}"
   region = "${var.Region}"
 }

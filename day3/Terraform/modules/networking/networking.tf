@@ -45,6 +45,7 @@ resource "google_compute_firewall" "task5-firewall-bastion" {
 }
 
 resource "google_compute_firewall" "task5-firewall-public-internal" {
+  depends_on = ["google_compute_network.vpc_network"]
   name    = "${var.FirewallName}-public-internal"
   network = "${var.student_name}-vpc"
   description = "Internal Public subnet Firewall rules for Task5"

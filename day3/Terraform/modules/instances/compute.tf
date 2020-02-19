@@ -23,7 +23,6 @@ resource "google_compute_instance" "nginx-web" {
 
   labels {
     servertype = "${var.LabelST}"
-    osfamily = "${var.LabelOF}"
     wayofinstallation = "${var.LabelWay}"
 	}
 
@@ -94,6 +93,20 @@ module "gce-lb-http" {
 resource "google_compute_instance_group" "nginx-group" {
   name = "nginx-group"
   zone = "${var.Zone}"
+  # region = "${var.Region}"
   description = "Group of 1 nginx server"
-  instances = ["${google_compute_instance.nginx-web.self_link}"]
+   instances = ["${google_compute_instance.nginx-web.self_link}"]
 }
+
+# data "google_compute_region_instance_group" "nginx-group" {
+#   name = "nginx-group"
+#   region = "us-central1"
+# }
+
+# resource "google_compute_region_instance_group_manager" "igm" {
+#   name = "nginx-group"
+#   target_size = "1"
+#   base_instance_name = "nginx-web"
+#   region = "us-central1"
+#   instance_template  = "${google_compute_instance_template.nginx-web.self_link}"
+# }
