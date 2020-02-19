@@ -30,9 +30,7 @@ resource "google_compute_firewall" "firewall-public" {
 
   source_ranges = ["10.10.1.0/24"]
 
-  depends_on = [
-    "google_compute_subnetwork.public-sub"
-  ]
+  depends_on = ["google_compute_subnetwork.public-sub"]
 }
 
 resource "google_compute_firewall" "firewall-private" {
@@ -47,7 +45,5 @@ resource "google_compute_firewall" "firewall-private" {
 
   source_ranges = ["10.10.2.0/24"]
 
-  depends_on = [
-    "google_compute_subnetwork.private-sub"
-  ]
+  depends_on = ["google_compute_subnetwork.private-sub"]
 }
