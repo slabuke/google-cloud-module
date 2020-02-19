@@ -28,8 +28,6 @@ resource "google_compute_firewall" "firewall-public" {
     ports = ["22", "80"]
   }
 
-  source_ranges = ["10.10.1.0/24"]
-
   depends_on = ["google_compute_subnetwork.public-sub"]
 }
 
