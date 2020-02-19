@@ -9,11 +9,7 @@
  4. How to upload objects to a Cloud Storage bucket.
  5. How to delete a Cloud Storage bucket and all the object it contains.
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task1/Screenshot%20from%202020-02-18%2013-34-40.png)
-
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task1/Screenshot%20from%202020-02-18%2014-11-51.png)
-
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task1/Screenshot%20from%202020-02-18%2014-11-59.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task1/Screenshot%20from%202020-02-19%2012-38-22.png)
 
 
 # * Task2
@@ -25,9 +21,9 @@
  5. Configure Lifecycle Management
  6. Setup IAM permissions
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task2/Screenshot%20from%202020-02-18%2015-04-36.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task2/Screenshot%20from%202020-02-19%2013-13-18.png)
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task2/Screenshot%20from%202020-02-18%2015-30-43.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task2/Screenshot%20from%202020-02-19%2013-33-41.png)
 
 
 # * Task3
@@ -40,9 +36,11 @@
  6. Use directory synchronization 
  7. Share a bucket across projects using Cloud IAM
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task3/Screenshot%20from%202020-02-18%2017-42-49.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task3/Screenshot%20from%202020-02-19%2016-48-43.png)
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task3/Screenshot%20from%202020-02-18%2018-39-18.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task3/Screenshot%20from%202020-02-19%2016-52-42.png)
+
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task3/Screenshot%20from%202020-02-19%2017-10-28.png)
 
 # * Task4
 
@@ -53,7 +51,4 @@
  5. How to Upload and set permissions on the static files for your website.
  6. How to Test your website.
  7. How to Add HTTPS support with a HTTPS LoadBalancer
-
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day3/Hometask/Screnshots/Task4/Screenshot%20from%202020-02-18%2019-55-29.png)
-
 
