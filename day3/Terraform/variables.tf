@@ -1,6 +1,5 @@
 # Terraform global variables
 
-#variable "Count" { default = 2 }
 variable "Name" { default = "nginx-skazak" }
 
 variable "Region" { default = "us-central1" }
