@@ -1,5 +1,7 @@
+# Revise vars.tf for vars
+
 resource "google_compute_instance_template" "nginx-web" {
-  name        = "nginx-web"
+  name        = "nginx-db"
   tags = "${var.Tags}"
   project = "${var.Project}"
   labels = {
@@ -13,8 +15,9 @@ resource "google_compute_instance_template" "nginx-web" {
     boot         = true
   }
   network_interface {
-  network = "${var.student_name}-vpc"
-	subnetwork = "sub-${var.student_name}-public"
+  network = "${var.vpc-name}"
+	subnetwork = "${var.sub-vpc-private-name}"
+  access_config = {}
   }
   metadata_startup_script = "${var.Provision}"
 }

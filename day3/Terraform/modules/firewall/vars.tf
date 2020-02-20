@@ -1,0 +1,1 @@
+variable "FirewallName" { default = "task5-firewall" }
