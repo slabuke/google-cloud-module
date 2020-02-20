@@ -30,19 +30,8 @@
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t3-setup-public.png "Public file")
 
 ### Task 4: <br>
-#### Ping
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t4-ping.png "Successful ping")
-#### Connect SSH
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t4-ssh.png "Successful SSH")
-
-### Task 5: <br>
-#### FW rules
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t5-fw.png "FW rules")
-#### My VPC
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t5-vpc.png "VPC")
-#### Custom Nginx Page
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/img/t5-nginx.png "Hello!")
-
-
-[Terraform main file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/main.tf "Main.tf") <br>
-[Terraform networks file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%203/networks.tf "networks.tf") <br>
+#### Create CNAME record and mount domain to Google Cloud Storage.
+![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t4-domain.png "Domain")
+![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t4-google.png "Google domain")
+#### Create a Google Cloud Storage bucket named like your domain.
+![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t4-domain-bucket.png "Domain bucket")
