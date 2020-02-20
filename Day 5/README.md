@@ -25,7 +25,7 @@
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%205/img/nginx-via-lb.png "Instance templates")
 
 ##### Enable Auto-scaling
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%205/img/scaling-on.png "Auto-scaling - ON)
+![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%205/img/scaling-on.png "Auto-scaling - ON")
 
 
 ##### My terraform file:
