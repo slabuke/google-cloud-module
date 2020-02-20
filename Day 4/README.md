@@ -18,7 +18,7 @@
 #### Share bucket with @gmail.com user.
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t2-share.png "Share bucket")
 #### Create bucket and use lifecycle.
-![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t2-create-json.png "Transfer")
+![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t2-create-json.png "Lifecycle")
 #### Transfer files from bucket to another bucket.
 ![alt text](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%204/img/t2-transfer.png "Transfer")
 
