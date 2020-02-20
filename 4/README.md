@@ -70,3 +70,29 @@
 ![screenshot of sample](pic/4/13.png)  <br>
 
 ![screenshot of sample](pic/4/14.png)  <br>
+***
+**5.  Task 5**
+>Create the following configuration via terraform:
+
+>![screenshot of sample](pic/5/15.png)  <br>
+
+>* Create Cloud Storage to and configure terraform backend to use remote storage (gcs)
+>* Network configuration should be taken from previous task and extended.
+
+![screenshot of sample](pic/5/16.png)  <br>
+
+![screenshot of sample](pic/5/17.png)  <br>
+
+![screenshot of sample](pic/5/18.png)  <br>
+
+![screenshot of sample](pic/5/19.png)  <br>
+
+![screenshot of sample](pic/5/20.png)  <br>
+
+![screenshot of sample](pic/5/21.png)  <br>
+
+![screenshot of sample](pic/5/22.png)  <br>
+
+![screenshot of sample](pic/5/23.png)  <br>
+
+![screenshot of sample](pic/5/24.png)  <br>
