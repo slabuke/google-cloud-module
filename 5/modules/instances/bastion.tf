@@ -28,6 +28,4 @@ EOF
     osfamily          = "debian"
     wayofinstallation = "terraform"
   }
-
-  #  depends_on = ["${var.google_compute_firewall_ssh_name}"]
 }

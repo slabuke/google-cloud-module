@@ -41,3 +41,19 @@ resource "google_compute_health_check" "health" {
     port = 80
   }
 }
+
+resource "google_compute_region_autoscaler" "web-servers" {
+  name   = "web-servers-autoscaler"
+  region = "us-central1"
+  target = "${var.public_managed_group_link}"
+
+  autoscaling_policy {
+    max_replicas    = 3
+    min_replicas    = 1
+    cooldown_period = 90
+
+    cpu_utilization {
+      target = 0.7
+    }
+  }
+}

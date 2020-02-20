@@ -24,3 +24,19 @@ resource "google_compute_forwarding_rule" "db-int-lb-forwarding-rule" {
   subnetwork            = "${var.Subnet-2-name}"
   backend_service       = "${google_compute_region_backend_service.int-lb.self_link}"
 }
+
+resource "google_compute_region_autoscaler" "db-servers" {
+  name   = "db-servers-autoscaler"
+  region = "us-central1"
+  target = "${var.private_managed_group_link}"
+
+  autoscaling_policy {
+    max_replicas    = 9
+    min_replicas    = 3
+    cooldown_period = 90
+
+    cpu_utilization {
+      target = 0.8
+    }
+  }
+}

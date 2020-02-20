@@ -17,9 +17,21 @@ module "instances" {
 }
 
 module "lb" {
-  source                = "./modules/lb"
-  public_managed_group  = "${module.instances.public_managed_group}"
-  private_managed_group = "${module.instances.private_managed_group}"
-  network_name          = "${module.networks.network_name}"
-  Subnet-2-name         = "${module.networks.Subnet-2-name}"
+  source                     = "./modules/lb"
+  public_managed_group       = "${module.instances.public_managed_group}"
+  private_managed_group      = "${module.instances.private_managed_group}"
+  public_managed_group_link  = "${module.instances.public_managed_group_link}"
+  private_managed_group_link = "${module.instances.private_managed_group_link}"
+  network_name               = "${module.networks.network_name}"
+  Subnet-2-name              = "${module.networks.Subnet-2-name}"
+}
+
+resource "google_storage_bucket" "static-content-store" {
+  name     = "static-content-store-bucket"
+  location = "US"
+
+  website {
+    main_page_suffix = "index.html"
+    not_found_page   = "404.html"
+  }
 }
