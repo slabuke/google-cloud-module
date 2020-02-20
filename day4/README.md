@@ -9,21 +9,21 @@
 ## Attaching a few screenshots
 
 ### Lab1
-![pic](Screenshots/11.png)
-![pic](Screenshots/12.png)
+![pic](../Screenshots/11.png)
+![pic](../Screenshots/12.png)
 
 ### Lab2
 
-![pic](Screenshots/21.png)
-![pic](Screenshots/22.png)
-![pic](Screenshots/23.png)
-![pic](Screenshots/24.png)
-![pic](Screenshots/25.png)
-![pic](Screenshots/26.png)
+![pic](../Screenshots/21.png)
+![pic](../Screenshots/22.png)
+![pic](../Screenshots/23.png)
+![pic](../Screenshots/24.png)
+![pic](../Screenshots/25.png)
+![pic](../Screenshots/26.png)
 
 ### Lab3
 
-![pic](Screenshots/31.png)
-![pic](Screenshots/32.png)
-![pic](Screenshots/33.png)
-![pic](Screenshots/34.png)
+![pic](../Screenshots/31.png)
+![pic](../Screenshots/32.png)
+![pic](../Screenshots/33.png)
+![pic](../Screenshots/34.png)
