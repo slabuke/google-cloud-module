@@ -13,6 +13,9 @@
 #  description = "Terraform unmanaged public subnet group"
 #
 #}
+resource "google_compute_target_pool" "web-lb" {
+  name = "web-lb"
+}
 
 resource "google_compute_region_instance_group_manager" "public_group" {
   name               = "instance-group-public-manager"
@@ -22,6 +25,11 @@ resource "google_compute_region_instance_group_manager" "public_group" {
 
   #zone               = ["us-central1-b", "us-central1-c", "us-central1-a"]
   instance_template = "${google_compute_instance_template.nginxserver.self_link}"
+  target_pools      = ["${google_compute_target_pool.web-lb.self_link}"]
+}
+
+output "public_managed_group" {
+  value = "${google_compute_region_instance_group_manager.public_group.instance_group}"
 }
 
 resource "google_compute_instance_template" "nginxserver" {
@@ -63,9 +71,4 @@ systemctl start nginx
 systemctl enable nginx
 echo 'Hello from Andrei Batura!' > /var/www/html/index.html
 EOF
-}
-
-data "google_compute_image" "my_image" {
-  family  = "debian-9"
-  project = "debian-cloud"
 }

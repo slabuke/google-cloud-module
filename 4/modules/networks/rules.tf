@@ -52,3 +52,16 @@ resource "google_compute_firewall" "ssh-open" {
 
   target_tags = ["ssh"]
 }
+
+resource "google_compute_firewall" "db-port-open" {
+  name        = "db-port-open"
+  network     = "${var.network_name}"
+  description = "open ssh trafiic to internal resource"
+
+  allow {
+    protocol = "tcp"
+    ports    = ["5432"]
+  }
+
+  target_tags = ["db"]
+}

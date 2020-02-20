@@ -37,3 +37,4 @@ variable "BastionZone" {
 variable "Subnet-1-name" {}
 variable "Subnet-2-name" {}
 variable "network_name" {}
+variable "google_compute_firewall_ssh_name" {}

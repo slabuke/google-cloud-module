@@ -9,5 +9,14 @@ module "networks" {
 }
 
 module "instances" {
-  source = "./modules/instances"
+  source        = "./modules/instances"
+  network_name  = "${module.networks.network_name}"
+  Subnet-1-name = "${module.networks.Subnet-1-name}"
+  Subnet-2-name = "${module.networks.Subnet-2-name}"
+}
+
+module "lb" {
+  source                = "./modules/lb"
+  public_managed_group  = "${module.instances.public_managed_group}"
+  private_managed_group = "${module.instances.private_managed_group}"
 }
