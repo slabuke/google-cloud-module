@@ -1,7 +1,7 @@
 # gcp-cloud-module
 
 ## task 3 by Aliaksandr Skvarcheuski
-Task 1
+###Task 1
 
 ### Setup Network and HTTP Load Balancers
 
@@ -16,8 +16,8 @@ Task 1
 
 
 
-Task 2
-Neworking 101
+###Task 2
+###Neworking 101
 
 
 ![](img/9.png)
