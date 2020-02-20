@@ -1,33 +1,40 @@
-#networking:
-variable "Subnet-1-name" {
+#-----------------------networking:------------------
+
+#----------------subnet 1:----------------
+variable "Subnet_1" {
   type        = "string"
   default     = "public"
-  description = "Subnet 1 to create on GCP"
+  description = "Subnet 1"
 }
 
-variable "Subnet-2-name" {
+#----------------subnet 2:----------------
+variable "Subnet_2" {
   type        = "string"
   default     = "private"
-  description = "Subnet 2 to create on GCP"
+  description = "Subnet 2"
 }
 
+#----------------my net:----------------
 variable "network_name" {
   type        = "string"
-  default     = "dmitriy-vpc"
-  description = "Direct link to the network"
+  default     = "dmitriy-mv"
+  description = "Network"
 }
 
+#----------------net region:----------------
 variable "network-region" {
   default     = "us-central1"
-  description = "Zone associated with the network. This defaults to the region configured in the provider."
+  description = "Region"
 }
 
-variable "Subnet-1-ip_cidr_range" {
+#----------------net 1 range:----------------
+variable "Subnet1_cidr" {
   default     = "10.12.1.0/24"
-  description = "IP range to book"
+  description = "IP range 1"
 }
 
-variable "Subnet-2-ip_cidr_range" {
+#----------------net 2 range:----------------
+variable "Subnet2_cidr" {
   default     = "10.12.2.0/24"
-  description = "IP range to book"
+  description = "IP range 2"
 }

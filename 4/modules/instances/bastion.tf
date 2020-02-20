@@ -1,5 +1,6 @@
+#----------------------------------bastion ---------------------------
 resource "google_compute_instance" "bastion-terraform" {
-  name         = "${var.name2}"
+  name         = "${var.bast}"
   machine_type = "${var.Instance_type}"
   zone         = "${var.BastionZone}"
   tags         = ["ssh", "ssh-server"]
@@ -19,7 +20,7 @@ EOF
 
   network_interface {
     network       = "${var.network_name}"
-    subnetwork    = "${var.Subnet-1-name}"
+    subnetwork    = "${var.Subnet_1}"
     access_config = {}
   }
 
@@ -29,4 +30,3 @@ EOF
     wayofinstallation = "terraform"
   }
 }
-
