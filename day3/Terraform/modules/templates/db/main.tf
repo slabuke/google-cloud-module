@@ -17,7 +17,7 @@ resource "google_compute_instance_template" "nginx-db" {
   network_interface {
   network = "${var.vpc-name}"
 	subnetwork = "${var.sub-vpc-private-name}"
-  # access_config = {}
+  access_config = {}
   }
   metadata_startup_script = "${var.Provision}"
 }
