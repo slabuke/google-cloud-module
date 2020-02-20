@@ -30,7 +30,7 @@ VPC network details:
 
 Secondly, I want to show u my resulsts:
 
-I have an access to http nginx server.
+I have an access to http nginx server. (I also like this phrase ^_^)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/tf-http-loadbalancer.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/tf-http-access.png)
 
