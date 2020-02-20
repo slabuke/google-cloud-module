@@ -26,8 +26,10 @@
 
  10. Creates storage bucket for backend static content 
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task3/Screenshot%20from%202020-02-19%2016-48-43.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day5/ExitTask/Screenshots/Screenshot%20from%202020-02-20%2018-25-00.png)
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task3/Screenshot%20from%202020-02-19%2016-52-42.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day5/ExitTask/Screenshots/Screenshot%20from%202020-02-20%2018-24-36.png)
 
-![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day4/Hometask/Screenshots/task3/Screenshot%20from%202020-02-19%2017-10-28.png)
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day5/ExitTask/Screenshots/Screenshot%20from%202020-02-20%2018-24-23.png)
+
+![IAMperm](https://github.com/MNT-Lab/google-cloud-module/blob/pkarunas/Day5/ExitTask/Screenshots/Screenshot%20from%202020-02-20%2018-20-46.png)
