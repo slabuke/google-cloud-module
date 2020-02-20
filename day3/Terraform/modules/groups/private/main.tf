@@ -13,19 +13,3 @@ resource "google_compute_region_instance_group_manager" "igm-db" {
   region = "${var.Region}"
   instance_template  = "${var.template-self_link}"
 }
-
-# resource "google_compute_region_autoscaler" "igm-autoscaler" {
-#   name   = "igm-autoscaler"
-#   region = "${var.Region}"
-#   target = "${google_compute_region_instance_group_manager.igm-db.self_link}"
-
-#   autoscaling_policy {
-#     max_replicas    = 5
-#     min_replicas    = 3
-#     cooldown_period = 60
-
-#     cpu_utilization {
-#       target = 0.5
-#     }
-#   }
-# }

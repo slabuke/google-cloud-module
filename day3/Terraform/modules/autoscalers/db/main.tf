@@ -1,3 +1,5 @@
+# Revise vars.tf for vars
+
 resource "google_compute_region_autoscaler" "igm-autoscaler-db" {
   name   = "igm-autoscaler-db"
   region = "${var.Region}"

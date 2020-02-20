@@ -1,19 +1,3 @@
-# module "gce-ilb" {
-#   source       = "GoogleCloudPlatform/lb-internal/google"
-#   version      = "1.0.4"
-#   region       = "${var.Region}"
-#   name         = "db-ilb"
-#   # network      = "${var.vpc-name}"
-# #  subnetwork      = "${var.sub-vpc-private-name}"
-#   ports        = ["80", "5432"]
-#   health_port = "80"
-#   source_tags  = "${var.STags}"
-#   target_tags  = "${var.DTags}"
-#   backends = [
-#       { group = "${var.instance-group_name}" }
-#   ]
-# }
-
 resource "google_compute_forwarding_rule" "db-rule" {
   name   = "db-lb"
   region = "${var.Region}"
