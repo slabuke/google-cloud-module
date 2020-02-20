@@ -1,0 +1,3 @@
+variable "vpc" {}
+
+variable "subnetpriv" {}
