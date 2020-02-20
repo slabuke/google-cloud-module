@@ -1,7 +1,7 @@
 resource "google_compute_instance_template" "template2" {
   name            = "template2"
   machine_type    = "n1-standard-1"
-  tags            = ["private", "ssh"]
+  tags            = ["http-server", "ssh"]
   can_ip_forward  = true
 
   disk {
@@ -16,5 +16,5 @@ resource "google_compute_instance_template" "template2" {
     access_config { }
   }
 
-  metadata_startup_script = "sudo apt-get install nginx -y"
+  metadata_startup_script = "sudo apt-get install nginx -y \nsudo bash -c 'echo \"Hi! I'm $(hostname -I)\" > /var/www/html/index.nginx-debian.html '\nsudo systemctl restart nginx"
 }

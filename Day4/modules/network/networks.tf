@@ -33,19 +33,6 @@ resource "google_compute_subnetwork" "public-subnet" {
 #   direction     = "EGRESS"
 # }
 
-resource "google_compute_firewall" "private" {
-  name        = "allowprivate"
-  network     = "${google_compute_network.vpc_network.name}"
-
-  allow {
-    protocol = "tcp"
-    ports    = ["5432"]
-  }
-
-  source_ranges = ["${google_compute_subnetwork.private-subnet.ip_cidr_range}", "${google_compute_subnetwork.public-subnet.ip_cidr_range}"]
-  target_tags   = ["private"]
-}
-
 resource "google_compute_firewall" "allow-http" {
   name          = "allowhttp"
   network       = "${google_compute_network.vpc_network.name}"
