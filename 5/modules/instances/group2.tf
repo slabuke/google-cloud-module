@@ -30,7 +30,7 @@ resource "google_compute_instance_template" "db" {
   }
 
   instance_description = "dbservers group template"
-  machine_type         = "g1-small"
+  machine_type         = "${var.Instance_type}"
   can_ip_forward       = true
 
   scheduling {
@@ -40,7 +40,7 @@ resource "google_compute_instance_template" "db" {
 
   // Create a new boot disk from an image
   disk {
-    source_image = "debian-cloud/debian-9"
+    source_image = "${var.Image_source}"
     auto_delete  = true
     boot         = true
   }

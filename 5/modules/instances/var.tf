@@ -8,10 +8,6 @@ variable "name2" {
   description = "Ubuntu based server"
 }
 
-variable "instance_count" {
-  default = "1"
-}
-
 variable "SSDsize" {
   default = "20"
 }
@@ -21,19 +17,15 @@ variable "Image_source" {
 }
 
 variable "Instance_type" {
-  default = "g1-small"
-}
-
-variable "WebZone" {
-  default     = "us-central1-b"
-  description = "Zone for nginxserver"
+  default     = "g1-small"
+  description = "DB_Instances_type"
 }
 
 variable "BastionZone" {
   default     = "us-central1-a"
   description = "Zone for Bastion server"
 }
-#networking:
+
 variable "Subnet-1-name" {}
 variable "Subnet-2-name" {}
 variable "network_name" {}

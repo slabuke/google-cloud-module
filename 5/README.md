@@ -16,5 +16,6 @@ Create infrastructure configuration via Terraform:
 ![screenshot of sample](img/5.png)  <br>
 ![screenshot of sample](img/6.png)  <br>
 ![screenshot of sample](img/7.png)  <br>
-
+![screenshot of sample](img/8.png)  <br>
+![screenshot of sample](img/9.png)  <br>
 Network configuration are taken from previous task and extended.
