@@ -30,4 +30,4 @@
 
 ##### My terraform file:
 [Terraform main file](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%205/main.tf "Main.tf") <br>
-[Modules for main.tf](https://github.com/MNT-Lab/google-cloud-module/blob/kbaravoy/Day%205/networks.tf "networks.tf") <br>
+[Modules for main.tf](https://github.com/MNT-Lab/google-cloud-module/tree/kbaravoy/Day%205/modules "networks.tf") <br>
