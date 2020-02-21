@@ -1,7 +1,9 @@
 # gcp-cloud-module
 ## task 4 by Vitali Andrushkevich
 
-> I have completed labs grom google code lab, few screenshots u may find [here][1]
+> I have completed labs grom google code lab
+
+screenshots u may find [here][1]
 
 [1]: https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day4/imgs_gcloud_lab
 
