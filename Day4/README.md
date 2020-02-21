@@ -3,8 +3,7 @@
 
 > I have completed labs grom google code lab
 
-screenshots u may find [here][1]
-
+Screenshots u may find [here][1] . As I remember, link was the same to the 3rd and 4th lab.
 [1]: https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day4/imgs_gcloud_lab
 
 
