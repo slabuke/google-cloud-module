@@ -30,7 +30,8 @@ VPC network details:
 
 Secondly, I want to show u my resulsts:
 
-I have an access to http nginx server. (I also like this phrase ^_^)
+I have an access to http nginx server.
+
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/tf-http-loadbalancer.png)
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/tf-http-access.png)
 
@@ -38,7 +39,7 @@ I have an access to BASTION server via ssh:
 
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/tf-connect-to-bastion.png)
 
-For showing internal load balancer I used nginx with custom pages on each instances and try to use curl from bastion to balancer:
+For showing internal load balancer I used nginx with custom pages on each instances and try to use curl from bastion to balancer (as I understand, we need that someone will listen us in some port, and the most easiest way for me was install nginx and listen on 80 port):
 
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/tf-curl-from-bastion.png)
 
