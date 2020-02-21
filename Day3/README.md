@@ -14,11 +14,8 @@
 ![](img/7.png)
 ![](img/8.png)
 
-
-
 ###Task 2
 ###Neworking 101
-
 
 ![](img/9.png)
 ![](img/10.png)
@@ -38,3 +35,16 @@
 ![](img/24.png)
 ![](img/25.png)
 
+##TASK 5
+#Create network configuration via terraform.
+Resources should be used:
+#1) google_compute_network (to create network)
+Network name: ${student_name}-vpc
+![](img/26.png)
+#2) google_compute_firewall
+![](img/27.png)
+#3) google_compute_subnetwork
+![](img/28.png)
+#4) google_compute_instance
+![](img/30.png)
+![](img/29.png)
