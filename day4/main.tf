@@ -17,3 +17,8 @@ module "instancepriv" {
   vpc = "${module.network.vpc}"
   subnetpriv = "${module.network.subnetpriv}"
 }
+  
+resource "google_storage_bucket" "gcplabtask4_bucket" {
+  name     = "letstryanewnameforthisbucket"
+  location = "US"
+}
