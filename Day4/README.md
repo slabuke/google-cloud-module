@@ -5,7 +5,9 @@
 
 [1]: https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day4/imgs_gcloud_lab
 
-> Also have compeleted task to create infrastructure with terraform
+
+
+> Also have compeleted task to create infrastructure with terraform - IT's was really interesting.
 
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/main%20schema.png)
 
