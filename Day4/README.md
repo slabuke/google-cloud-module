@@ -4,8 +4,6 @@
 > I have completed labs grom google code lab
 
 Screenshots u may find [here][1] . As I remember, link was the same to the 3rd and 4th lab.
-[1]: https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day4/imgs_gcloud_lab
-
 
 
 > Also have compeleted task to create infrastructure with terraform - IT's was really interesting.
@@ -46,3 +44,4 @@ For showing internal load balancer I used nginx with custom pages on each instan
 
 ![Image alt](https://github.com/MNT-Lab/google-cloud-module/blob/vandrushkevich/Day4/imgs_terraform/tf-curl-from-bastion.png)
 
+[1]: https://github.com/MNT-Lab/google-cloud-module/tree/vandrushkevich/Day4/imgs_gcloud_lab
