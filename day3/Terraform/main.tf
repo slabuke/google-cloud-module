@@ -69,7 +69,7 @@ module "group-public" {
   region = "${var.Region}"
   zones = "${var.Zones}"
   template = "${module.template-web.template-self_link}"
-  size = "1"
+  size = 1
 }
 
 # DB Region Instance Group
@@ -82,7 +82,7 @@ module "group-private" {
   zones = "${var.Zones}"
   template = "${module.template-db.template-self_link}"
   vpc-name = "${module.networking.vpc-name}"
-  size = "3"
+  size = 3
 }
 
 # Global HTTP Loadbalancer
