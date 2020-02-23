@@ -131,6 +131,14 @@ module "autoscaler-db" {
   max = 5
 }
 
+# Bucket for tfstate
+
+# module "storage" {
+#   source = "./modules/storage"
+#   name = "skazak-tf-state-prod"
+#   location = "US"
+# }
+
 # Credentials, Project, default region and gcp version to use
 
 provider "google" {
@@ -138,4 +146,12 @@ provider "google" {
   project = "${var.Project}"
   region = "${var.Region}"
   version = "2.20"
+}
+
+terraform {
+  project = "${var.Project}"
+  backend "gcs" {
+    bucket  = "skazak-tf-state-prod"
+    prefix  = "terraform/state"
+  }
 }
