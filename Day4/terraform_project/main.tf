@@ -29,8 +29,3 @@ module "lb" {
    source         = "./modules/instance_group"
    subnet-private = "${module.networks.vpc-private}"
  }
-
- module "bucket" {
-   source         = "./modules/buckets"
- }
- 
