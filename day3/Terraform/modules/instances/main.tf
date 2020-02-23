@@ -3,27 +3,27 @@
 data "google_compute_zones" "available" {}
 
 resource "google_compute_instance" "bastion-srv" {
-  name = "bastion-${var.Name}"  
-  description = "Nginx sample VM"
+  name = "${var.name}"  
+  description = "Bastion VM"
   deletion_protection = false
-  project = "${var.Project}"
-  zone = "${var.ZoneBastion}"
-  machine_type = "${var.Type}"
-  tags  =  "${var.TagsBastion}"
+  project = "${var.project}"
+  zone = "${var.zone}"
+  machine_type = "${var.type}"
+  tags  =  "${var.tags}"
 
   boot_disk {
     initialize_params {
-      image = "${var.DiskImage}"
-      type = "${var.DiskType}"
-      size = "${var.DiskSize}"
+      image = "${var.dimage}"
+      type = "${var.dtype}"
+      size = "${var.dsize}"
     }
   }
 
-  metadata_startup_script = "${var.ProvisionBastion}"
+  metadata_startup_script = "${var.script}"
 
   labels {
-    servertype = "${var.LabelSTB}"
-    wayofinstallation = "${var.LabelWay}"
+    servertype = "${var.label-type}"
+    wayofinstallation = "${var.label-way}"
   }
 
   network_interface {

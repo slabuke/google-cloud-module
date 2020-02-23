@@ -1,1 +1,5 @@
-variable "Region" { default = "us-central1" }
+variable "name" {}
+variable "region" {}
+variable "igm-db" {}
+variable "min" {}
+variable "max" {}

@@ -1,4 +1,6 @@
-variable "Project" { default = "devopslab2020-gcp-module" }
-variable "Region" { default = "us-central1" }
-variable "GroupName" { default = "nginx-group" }
-variable "template-self_link" {}
+variable "project" {}
+variable "region" {}
+variable "zones" { default = [] }
+variable "name" {}
+variable "size" {}
+variable "template" {}

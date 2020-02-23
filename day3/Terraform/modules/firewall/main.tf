@@ -1,7 +1,7 @@
 # Revise vars.tf for vars
 
 resource "google_compute_firewall" "task5-firewall-private" {
-  name    = "${var.FirewallName}-private"
+  name    = "${var.name}-private"
   network = "${var.vpc-self_link}"
   description = "Private Firewall rules for Task5"
   allow {
@@ -17,7 +17,7 @@ resource "google_compute_firewall" "task5-firewall-private" {
 
 resource "google_compute_firewall" "task5-firewall-public" {
 #  depends_on = ["google_compute_network.vpc_network"]
-  name    = "${var.FirewallName}-public"
+  name    = "${var.name}-public"
   network = "${var.vpc-self_link}"
   description = "Public Firewall rules for Task5"
 
@@ -33,7 +33,7 @@ resource "google_compute_firewall" "task5-firewall-public" {
 
 resource "google_compute_firewall" "task5-firewall-bastion" {
 #  depends_on = ["google_compute_network.vpc_network"]
-  name    = "${var.FirewallName}-bastion"
+  name    = "${var.name}-bastion"
   network = "${var.vpc-self_link}"
   description = "Public Firewall rules for Bastion"
 
@@ -46,7 +46,7 @@ resource "google_compute_firewall" "task5-firewall-bastion" {
 
 resource "google_compute_firewall" "task5-firewall-public-internal" {
 #  depends_on = ["google_compute_network.vpc_network"]
-  name    = "${var.FirewallName}-public-internal"
+  name    = "${var.name}-public-internal"
   network = "${var.vpc-self_link}"
   description = "Internal Public subnet Firewall rules for Task5"
   allow {

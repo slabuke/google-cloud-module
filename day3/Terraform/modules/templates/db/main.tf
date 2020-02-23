@@ -1,9 +1,9 @@
 # Revise vars.tf for vars
 
 resource "google_compute_instance_template" "nginx-db" {
-  name        = "nginx-db"
+  name = "${var.name}"
   tags = "${var.Tags}"
-  project = "${var.Project}"
+  project = "${var.project}"
   labels = {
     environment = "dev"
   }

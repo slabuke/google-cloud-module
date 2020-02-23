@@ -3,14 +3,12 @@
 module "gce-lb-http" {
   version           = "1.0.10"
   source            = "GoogleCloudPlatform/lb-http/google"
-  name              = "group-http-lb"
-  target_tags       = ["web"]
+  name              = "${var.name}"
+  target_tags       = "${var.target_tags}"
   backends          = {
     "0" = [
-      { group = "${var.instance-group_name}" }
+      { group = "${var.ign}" }
     ],
   }
   backend_params = ["/,http,80,10"]
 }
-
-variable "instance-group_name" {}

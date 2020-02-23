@@ -1,1 +1,1 @@
-variable "FirewallName" { default = "task5-firewall" }
+variable "name" {}
