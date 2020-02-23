@@ -155,3 +155,7 @@ terraform {
     prefix  = "terraform/state"
   }
 }
+
+output "bastion" {
+  value = "ssh ${module.addresses.bastion-ip-address}"
+}
