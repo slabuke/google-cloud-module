@@ -5,8 +5,8 @@ resource "google_compute_target_pool" "web-lb" {
 
 # Create template for deploy Webservers
 resource "google_compute_instance_template" "nginxserver" {
-  name        = "webserver-template"
-  tags        = ["http", "ssh-int"]
+  name = "webserver-template"
+  tags = ["http", "ssh-int"]
 
   labels = {
     environment = "webserver"
@@ -50,7 +50,7 @@ resource "google_compute_region_instance_group_manager" "public_group" {
   base_instance_name = "web-server"
   region             = "us-central1"
 
-  distribution_policy_zones  = ["us-central1-a", "us-central1-b", "us-central1-c"]
+  distribution_policy_zones = ["us-central1-a", "us-central1-b", "us-central1-c"]
 
   instance_template = "${google_compute_instance_template.nginxserver.self_link}"
   target_pools      = ["${google_compute_target_pool.web-lb.self_link}"]
@@ -59,4 +59,8 @@ resource "google_compute_region_instance_group_manager" "public_group" {
 # Output for main.tf
 output "public_managed_group" {
   value = "${google_compute_region_instance_group_manager.public_group.instance_group}"
+}
+
+output "public_managed_group_link" {
+  value = "${google_compute_region_instance_group_manager.public_group.self_link}"
 }
